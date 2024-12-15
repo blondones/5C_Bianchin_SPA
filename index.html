@@ -16,27 +16,962 @@
          <h1>Benvenuto sulla mia SPA</h1>
          <h5>Qua potrai imparare le basi di C++, JavaScript e soprattutto Node.js</h5>
          <div class="row">
-            <a href="#pagina2">Vai all'argomento "Introduzione al JavaScript"</a>
+            <a href="#pagina2">Vai all'argomento "C/C++: Introduzione Completa"</a>
          </div>
          <div class="row">
-            <a href="#pagina3">Vai all'argomento "NodeJS"</a>
+            <a href="#pagina3">Vai all'argomento "Introduzione al JavaScript"</a>
          </div>
          <div class="row">
-            <a href="#pagina4">Vai all'argomento "C/C++: Introduzione Completa"</a>
+            <a href="#pagina4">Vai all'argomento "NodeJS"</a>
          </div>
+         
       </div>
 
       <div id="pagina2" class="page">
+         <h2>C/C++: introduzione completa</h2>
+         <div class="row">
+            <a href="#pagina1">Trona alla "Home"</a>
+         </div>
+         <div class="row">
+            <div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">C/C++: introduzione completa</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading"><strong>Linguaggi C e C++</strong></h2>
+
+
+
+               <p>C &egrave; un linguaggio di programmazione compilato nato nel 1972, inventato da Dennis Ritchie e Brian Kerningham come linguaggio con cui scrivere applicazioni per Unix (inventato da Ken Tompson e lo stesso Ritchie negli stessi anni). Il compilatore C &egrave; oggi presente nella pressoch&egrave; totalit&agrave; dei sistemi operativi della pressoch&egrave; totalit&agrave; dei computer esistenti. E&rsquo; utilizzato principalmente per realizzare sistemi operativi (il kernel di Linux &egrave; interamente in C), librerie di natura scientifica, robotica, intelligenza artificiale, calcolo numerico, videogiochi e sistemi real time. Il set di istruzioni e la sintassi del C &egrave; semplice da imparare, tanto che essa &egrave; utilizzata in modo quasi identico dalla maggior parte dei linguaggi di programmazione pi&ugrave; diffusi al mondo (come Java, C#, Javascript e parzialmente Python).</p>
+               
+               
+               
+               <figure class="wp-block-image size-full is-resized"><img fetchpriority="high" decoding="async" width="732" height="667" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image.png" alt="" class="wp-image-105" style="width:263px;height:auto" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image.png 732w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-300x273.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-230x210.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-350x319.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-480x437.png 480w" sizes="(max-width: 732px) 100vw, 732px"/></figure>
+               
+               
+               
+               <p>Il C inoltre consente una gestione a basso livello della memoria, grazie all&rsquo;utilizzo dei puntatori e ad istruzioni di allocazione e deallocazione della memoria. Il linguaggio C, grazie alla sua sintassi, la gestione diretta della memoria, la mancanza di strutture complesse come classi e generici, e la gestione del multithreading, si rende particolarmente adatto a scopo didattico, in quanto permette di comprendere appieno il modo in cui un processo &egrave; strutturato in memoria, il modo in cui sono create e gestite variabili semplici e complesse, ed il modo in cui viene gestita la concorrenza.</p>
+               
+               
+               
+               <p>Una volta imparato il linguaggio permette allo studente di informatica di avere una base di competenza per poter apprendere altri linguaggi pi&ugrave; ad alto livello da un punto di vista privilegiato di chi ha avuto modo di avere una visione d&rsquo;insieme.</p>
+               
+               
+               
+               <p>C++ &egrave; un linguaggio di programmazione nato nel 1983 da Bjourne Stroustrup, presso i laboratori Bell della AT&amp;T. C++ &egrave; una estensione del linguaggio C, quindi ogni codice scritto in C compila anche col compilatore C++, tanto che oggi la quasi totalit&agrave; dei compilatori C compila anche C++.</p>
+               
+               
+               
+               <p>C++ introduce nuove funzioni ad alto livello al C, come la programmazione ad oggetti, i template, i namespace. Inoltre estende la libreria standard con nuove funzioni (come gli stream).</p>
+               
+               
+               
+               <p>In questa trattazione svilupperemo in C++, anche se la maggior parte delle funzionalit&agrave; che useremo saranno quelle gi&agrave; presenti nel C. Del C++ prenderemo in particolare il concetto di namespace e soprattutto le funzioni cin/cout, pi&ugrave; semplici da imparare dei corrispettivi C (printf e scanf). Il sistema operativo di riferimento sar&agrave; Linux.</p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>IDE&nbsp;e ambiente</strong></h2>
+               
+               
+               
+               <p>L&rsquo;Integrated Development Environment &egrave; l&rsquo;ambiente integrato dove avviene lo sviluppo. L&rsquo;IDE qui utilizzato &egrave; Visual Studio Code, che prevede tramite plugin l&rsquo;esecuzione con C++ e Linux.</p>
+               
+               
+               
+               <p>VS Code prevede una interfaccia per scrivere codice, visualizzare pi&ugrave; sorgenti differenti, anche contemporaneamente, offre integrato un terminale a linea di comando (con cui &egrave; possibile interagire con le applicazioni in esecuzione), e infine, offre strumenti per il debugging.</p>
+               
+               
+               
+               <p>Il&nbsp;<strong>debugger</strong>&nbsp;&egrave; uno strumento che permette di eseguire il codice passo passo, oppure fermare l&rsquo;esecuzione in una linea di codice (apponendo uno specifico breakpoint), e ispezionare ad ogni interruzione il contenuto delle variabili utilizzate. VSCode si integra col debugger di C++.</p>
+               
+               
+               
+               <p><strong>Primo programma</strong></p>
+               
+               
+               
+               <p>Scrivere nell&rsquo;IDE il seguente programma e salvarlo come helloworld.cpp</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>#include&nbsp;&lt;iostream&gt;
+               
+               using&nbsp;namespace&nbsp;std;&nbsp;
+               
+               int&nbsp;main() {&nbsp;&nbsp;&nbsp;&nbsp;
+                   cout&nbsp;&lt;&lt;&nbsp;&quot;Hello World&quot;&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;&nbsp;&nbsp;
+                   return&nbsp;0;
+               }</code></pre></div>
+               
+               
+               
+               <p>Compilare il codice eseguendo:</p>
+               
+               
+               
+               <p><code>&gt; g++ helloworld.cpp</code></p>
+               
+               
+               
+               <p>Il codice sar&agrave; validato, compilato e linkato. Al termine verr&agrave; generato un file a.out nella stessa cartella del sorgente. Il compilatore se non ci sono errori non dar&agrave; nessun output.</p>
+               
+               
+               
+               <p>Eseguire l&rsquo;applicazione:</p>
+               
+               
+               
+               <p><code>&gt; ./a.out</code></p>
+               
+               
+               
+               <p><code>Hello World</code></p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>Struttura generale di un programma C++</strong></h2>
+               
+               
+               
+               <p>Un programma C++ &egrave; costituito da una o pi&ugrave; funzioni. Una&nbsp;<strong>funzione</strong>&nbsp;&egrave; un&nbsp;<strong>sottoprogramma</strong>&nbsp;definito da un&nbsp;<strong>nome</strong>, un tipo di dato&nbsp;<strong>restituito</strong>&nbsp;e dei&nbsp;<strong>parametri</strong>&nbsp;tra parentesi.</p>
+               
+               
+               
+               <p>E&rsquo; obbligatorio inserire almeno la funzione&nbsp;<strong>main</strong>. Questa &egrave;, infatti, il punto di&nbsp;<strong>ingresso</strong>&nbsp;nel programma, ovvero la prima funzione che viene eseguita quando eseguiamo il programma.</p>
+               
+               
+               
+               <p>Un programma pu&ograve; contenere istruzioni speciali precedute dal carattere&nbsp;#: sono le&nbsp;<strong>direttive</strong>&nbsp;del compilatore. Un esempio &egrave;&nbsp;#include: si tratta di una direttiva che richiede di includere&nbsp;<strong>l&rsquo;header</strong>&nbsp;(cio&egrave; l&rsquo;intestazione) di una&nbsp;<strong>libreria</strong>&nbsp;esterna. Nel codice di esempio viene inclusa la libreria &lt;iostream&gt; che permette di utilizzare l&rsquo;istruzione cout, che consente di stampare su schermo. Gli header sono quindi, a compile time, le interfacce di programmazione spiegate nel primo paragrafo. A build time saranno sostituite dalle librerie vere e proprie ed incluse nell&rsquo;eseguibile.</p>
+               
+               
+               
+               <p>Pu&ograve; essere poi (facoltativamente) previsto un&nbsp;<strong>namespace</strong>. Quando definiamo un namespace creiamo una regione del programma dove possiamo creare funzioni e variabili che possono essere identificati dall&rsquo;esterno (del namespace) solo tramite il prefisso del namespace. Un namespace pu&ograve; essere usato anche in pi&ugrave; file sorgente e serve per organizzare sorgenti in gruppi ben definiti ed evitare quindi confusione in programmi medio-grandi. Quando vogliamo usare i simboli di un namespace possiamo usare l&rsquo;istruzione&nbsp;<code>using namespace name</code> dove name &egrave; il nome del namespace. Nell&rsquo;esempio viene utilizzato il namespace&nbsp;std, che contiene l&rsquo;istruzione&nbsp;cout. Vedremo i namespace pi&ugrave; in dettaglio fra poco.</p>
+               
+               
+               
+               <p>Qui l&rsquo;elenco completo di cosa possiamo inserire in un programma C++:</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>direttive</strong>&nbsp;del compilatore (precedute da&nbsp;#)</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>commenti</strong>&nbsp;(preceduti da&nbsp;//&nbsp;oppure&nbsp;/* &hellip; */&nbsp;se su pi&ugrave; righe)</p>
+               
+               
+               
+               <p>&ndash; istruzioni&nbsp;<strong>using</strong></p>
+               
+               
+               
+               <p>&ndash; istruzioni&nbsp;<strong>namespace</strong></p>
+               
+               
+               
+               <p>&ndash; dichiarazione di variabili&nbsp;<strong>globali</strong>&nbsp;(esterne e visibili dalle funzioni)</p>
+               
+               
+               
+               <p>&ndash; funzione&nbsp;<strong>main</strong>&nbsp;(obbligatoria)</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>funzioni</strong>&nbsp;utente (facoltative)</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>istruzioni</strong>&nbsp;(<strong>interne</strong>&nbsp;alle funzioni)</p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>Tipi di dato e identificatori.</strong></h2>
+               
+               
+               
+               <p>I nomi di variabile sono chiamati identificatori. Un identificatore valido deve cominciare con una maiuscola, minuscola o carattere _, seguito da maiuscole, minuscole, numeri o ancora _. Gli identificatori sono case sensitive. Non sono consentiti identificatori con nomi riservati con parole chiave del linguaggio (es. if, for, ecc.).</p>
+               
+               
+               
+               <p>E&rsquo; una buona prassi usare come prima lettera una minuscola per nomi di variabile e di funzioni, ed usare nomi &ldquo;parlanti&rdquo; per le variabili, onde ricordare a cosa servono. L&rsquo;uso di identificatori molto brevi, come x, y, i, ecc. pu&ograve; essere comunque utile in variabili ad uso circoscritto e con visibilit&agrave; locale.</p>
+               
+               
+               
+               <p>I tipi di dato base fondamentali del C++ sono:&nbsp;<strong>int</strong>,&nbsp;<strong>float</strong>&nbsp;(virgola mobile),&nbsp;<strong>double</strong>&nbsp;(virgola mobile doppia parola),&nbsp;<strong>long</strong>&nbsp;(intero doppia parola),&nbsp;<strong>bool</strong>,&nbsp;<strong>char</strong>. Ne sono presenti molti altri (vedere documentazione ufficiale).</p>
+               
+               
+               
+               <p>Si ricorda che la&nbsp;<strong>parola</strong>&nbsp;&egrave; nel computer la dimensione (in bit o byte) del tipo di dato, che dipende dall&rsquo;<span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Architettura&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;L&amp;#039;architettura di un sistema informatico indica il modo in cui &egrave; organizzato il software, di quali componenti e moduli &egrave; composto, che ruolo hanno e in che modo comunicano.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>architettura</span> della CPU (es. 16, 32, 64 bit, ecc.).</p>
+               
+               
+               
+               <p>Quindi con una parola di 32 bit, un intero potr&agrave; contenere valori da -232&nbsp;a + 232-1.</p>
+               
+               
+               
+               <p>In C++ ogni variabile va dichiara indicando prima il tipo.</p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>Sintassi</strong></h2>
+               
+               
+               
+               <p>La sintassi di C++ prevede le seguenti regole:</p>
+               
+               
+               
+               <p>&ndash; ogni istruzione deve terminare con un ;</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>int i = 0;</code></pre></div>
+               
+               
+               
+               <p>Sono consentiti spazi nelle dichiarazioni di variabile, sono invece obbligatori nelle definizioni di tipo e nell&rsquo;uso di parole chiave riservate.</p>
+               
+               
+               
+               <p>&ndash; una istruzione pu&ograve; essere sostituita da un blocco:</p>
+               
+               
+               
+               <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  int i=0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  int j=i+2;
+               }</code></pre></div>
+               </div>
+               
+               
+               
+               <p>Le variabili dichiarate in un blocco non sono visibili anche all&rsquo;esterno del blocco.</p>
+               
+               
+               
+               <p>Per estensione le variabili dichiarate in un blocco di funzione sono visibili nella funzione ma non all&rsquo;esterno.</p>
+               
+               
+               
+               <p>Una variabile dichiarata in un blocco con lo stesso nome di una variabile dichiarata esternamente, la va a sostituire (come simbolo) all&rsquo;interno del blocco.</p>
+               
+               
+               
+               <p>In conclusione, le variabili possono essere&nbsp;<strong>globali</strong>&nbsp;se dichiarate fuori da una funzione,&nbsp;<strong>locali</strong>&nbsp;se dichiarate in una&nbsp;<strong>funzione</strong>&nbsp;(visibili quindi solo in quella funzione) o&nbsp;<strong>blocco</strong>&nbsp;(visibili solo nel blocco).</p>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Namespace</strong></h3>
+               
+               
+               
+               <p>In C++ sono poi previsti i namespace. I namespace sono un modo per raggruppare nomi di variabili in un contenitore, anche in sorgenti differenti. Questa necessit&agrave; nasce dal fatto che un programma C++ pu&ograve; essere costituito da molti sorgenti, realizzati anche da differenti sviluppatori: diventa probabile quindi un conflitto di nomi tra variabili col rischio quindi di riusare lo stesso nome di variabile senza volerlo. Il namespace permette di identificare univocamente una variabile rinchiudendola in un contenitore, ovvero il namespace, anche se ha lo stesso nome locale di un&rsquo;altra variabile.</p>
+               
+               
+               
+               <p>Questo rende possibile usare lo stesso nome di variabile (anche globale) in due namespace differenti.</p>
+               
+               
+               
+               <p>Per usare un nome di un altro namespace occorre prevedere il prefisso:</p>
+               
+               
+               
+               <pre class="wp-block-code"><code><code>nome_spazio::nome_variabile</code></code></pre>
+               
+               
+               
+               <p>Ad esempio usando la libreria iostream &egrave; possibile usare i simboli cin e cout del namespace std:</p>
+               
+               
+               
+               <p><code>std::cin &gt;&gt; n;</code></p>
+               
+               
+               
+               <p>In alternativa si pu&ograve; anteporre la direttiva using per indicare esplicitamente che si usa un determinato namespace:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>using namespace std;</code></pre></div>
+               
+               
+               
+               <p>In questo modo non si deve usare il prefisso.</p>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Espressioni</strong></h3>
+               
+               
+               
+               <p>Una espressione &egrave; una struttura codificata di dati e operatori che viene valutata a runtime.</p>
+               
+               
+               
+               <p>Essa pu&ograve; essere oggetto di assegnazione o parametro di funzione. L&rsquo;espressione viene sempre valutata prima del suo utilizzo (ovvero stampa o assegnazione).</p>
+               
+               
+               
+               <p>Espressioni principali di C++:</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>literal</strong>: valori numerici o stringhe assoluti. es 1, False, &ldquo;Ciao&rdquo;.</p>
+               
+               
+               
+               <p>&ndash; espressioni&nbsp;<strong>aritmetiche</strong>. Es. &ldquo;5+4&rdquo;, &ldquo;90/2&rdquo;. Possono essere applicati operatori matematici (+,-,/,*,%, ecc.).</p>
+               
+               
+               
+               <p>&ndash; espressioni&nbsp;<strong>stringa</strong>: Es. &ldquo;ciao&rdquo; + &rdquo; Mario&rdquo;. Possono essere applicati operatori come + (concatenazione).</p>
+               
+               
+               
+               <p>&ndash; espressioni logiche&nbsp;<strong>booleane</strong>. Es. 5 &gt; 3. Possono essere solo True o False. Possono essere applicati operatori booleani (&lt;, &lt;=, &gt;, &gt;=, !=, ==, !== e !==).</p>
+               
+               
+               
+               <p>&ndash; operatori&nbsp;<strong>unari</strong>. Es. c++ (incrementa di 1 il valore di c)</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>null</strong>&nbsp;: indica il valore vuoto.</p>
+               
+               
+               
+               <p>In C++ la conversione implicita di tipo &egrave; possibile solo quando si assegna un valore literal ad una variabile. Esempio: int c = 3;</p>
+               
+               
+               
+               <p>In tutti gli altri casi la conversione deve essere esplicita.</p>
+               
+               
+               
+               <p>int b = (int) 2.2.</p>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Espressioni logiche</strong></h3>
+               
+               
+               
+               <p>Queste espressioni servono per confrontare due o pi&ugrave; valori.</p>
+               
+               
+               
+               <figure class="wp-block-table"><table><thead><tr><th>Operatore</th><th>Significato</th></tr></thead><tbody><tr><td>==</td><td>Uguaglianza</td></tr><tr><td>!=</td><td>Diversit&agrave;</td></tr><tr><td>&gt;</td><td>Maggiore</td></tr><tr><td>&lt;</td><td>Minore</td></tr><tr><td>&gt;=</td><td>Maggiore uguale</td></tr><tr><td>&lt;=</td><td>Minore uguale</td></tr></tbody></table></figure>
+               
+               
+               
+               <p>Si applicano a valori numerici Hanno come risultato un bool quindi possono avere valore TRUE o FALSE e vengono chiamati anche CONDIZIONI.</p>
+               
+               
+               
+               <p>Esempio:</p>
+               
+               
+               
+               <p>a == b</p>
+               
+               
+               
+               <p>a &lt; 3</p>
+               
+               
+               
+               <p>k == 4</p>
+               
+               
+               
+               <p>c &lt;= 6</p>
+               
+               
+               
+               <p><strong>Operatori booleani</strong></p>
+               
+               
+               
+               <figure class="wp-block-table"><table><thead><tr><th>Operatore</th><th>Significato</th></tr></thead><tbody><tr><td>!</td><td>Not logico</td></tr><tr><td>&amp;&amp;</td><td>And logico</td></tr><tr><td></td><td></td></tr></tbody></table></figure>
+               
+               
+               
+               <p>Permettono di verificare pi&ugrave; condizioni insieme (quindi connettono variabili di tipo bool).</p>
+               
+               
+               
+               <p>Il risultato &egrave; di tipo bool quindi TRUE o FALSE.</p>
+               
+               
+               
+               <p>Espressioni:</p>
+               
+               
+               
+               <p>le espressioni sono una qualsiasi combinazione di operatori di confronto e booleani. Esse producono un bool quindi TRUE o FALSE</p>
+               
+               
+               
+               <p>Esempio:</p>
+               
+               
+               
+               <p>a == b || c == b : vera se a &egrave; uguale a b OPPURE c &egrave; uguale a b</p>
+               
+               
+               
+               <p>z &lt; 4 &amp;&amp; z &gt; 1&nbsp;&nbsp;: vera se z &egrave; compreso tra 1 e 4 esclusi</p>
+               
+               
+               
+               <p>(a == 6 || a == 8) &amp;&amp; ( b &lt; c) : vera se a &egrave; 6 oppure 8 E INOLTRE se b &egrave; inferiore a c.</p>
+               
+               
+               
+               <p>Occorre fare attenzione alle regole di precedenza:</p>
+               
+               
+               
+               <ul class="wp-block-list">
+               <li>Prima vengono le parentesi</li>
+               
+               
+               
+               <li>Poi vengono gli operatori di confronto</li>
+               
+               
+               
+               <li>Infine gli operatori booleani</li>
+               
+               
+               
+               <li>Tra i booleani l&rsquo;ordine &egrave; NOT (!), AND (&amp;&amp;), OR (||)</li>
+               </ul>
+               
+               
+               
+               <h3 class="wp-block-heading">I<strong>nput e output</strong></h3>
+               
+               
+               
+               <p>Per l&rsquo;input e l&rsquo;output si usano cin e cout. Questi due simboli rappresentano gli &ldquo;stream&rdquo; ovvero dei flussi, rispettivamente in ingresso e uscita.</p>
+               
+               
+               
+               <p><strong>cin</strong>: con questo simbolo richiediamo esplicitamente dal flusso di input l&rsquo;inserimento di un valore tramite operatore &gt;&gt;. Esempio:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>int n;
+               
+               cin &gt;&gt; n;</code></pre></div>
+               
+               
+               
+               <p>A runtime, quando viene eseguita questa istruzione, il programma lascia il controllo all&rsquo;utente, che da tastiera pu&ograve; inserire un valore. Questo viene passato (operatore &gt;&gt;) a n che ne assume il valore. Occorre fare attenzione: il flusso di cin si interrompe quando l&rsquo;utente preme invio o spazio. Se preme invio il controllo viene rilasciato al programma, se invece viene premuto spazio cin smette di inviare ma non viene rilasciato il controllo. E&rsquo; comunque necessario premere invio per ridare il controllo al programma.</p>
+               
+               
+               
+               <p>Per inserire una linea intera si usa l&rsquo;istruzione cin.getline() che si vedr&agrave; successivamente.</p>
+               
+               
+               
+               <p><strong>cout</strong>: con questo simbolo inviamo al flusso di output una espressione o pi&ugrave; espressioni, tramite operatore &lt;&lt;</p>
+               
+               
+               
+               <p>Esempio:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>cout &lt;&lt; &ldquo;Hello world&rdquo;;
+               
+               int n = 4;
+               
+               cout &lt;&lt; &ldquo;Il valore &egrave;: &rdquo; &lt;&lt; n;
+               
+               cout &lt;&lt; &ldquo;Ciao&rdquo; &lt;&lt; endl;</code></pre></div>
+               
+               
+               
+               <p><strong>endl</strong> &egrave; una espressione speciale, indipendente dal sistema operativo, che indica il carattere di fine linea.</p>
+               
+               
+               
+               <p>E&rsquo; possibile concatenare pi&ugrave; espressioni con l&rsquo;operatore &gt;&gt;.</p>
+               
+               
+               
+               <p>Per quanto riguarda i numeri con la virgola (tipo di dato <strong>float</strong> o <strong>double</strong>) &egrave; possibile indicare la precisione (cio&egrave; il numero di cifre) con l&rsquo;espressione <strong>setprecision(x)</strong> che indica il numero di cifre. Bisogna per&ograve; ricordarsi di includere anche la libreria <strong>&lt;iomanip&gt;</strong></p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-plain"><code>#include &lt;iostream&gt;
+               #include &lt;iomanip&gt;
+               
+               using namespace std;
+               
+               int main() {
+                 double pi = 3.14159;
+                 cout &lt;&lt; setprecision(2) &lt;&lt; pi &lt;&lt; endl; // 3.14
+                 cout &lt;&lt; setprecision(5) &lt;&lt; pi &lt;&lt; endl; // 3.1416
+                 cout &lt;&lt; setprecision(7) &lt;&lt; pi &lt;&lt; endl; // 3.1415900
+                 return 0;
+               }
+               </code></pre></div>
+               
+               
+               
+               <p></p>
+               </div><div id="eckb-article-content-footer">
+                     
+               
+                  
+                     
+                     
+                  <footer id="colophon" class="site-footer">
+                     <div class="container">
+                        <div class="site-info">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="sydney-credits">&copy; 2024 Ci piace info. </div>					</div>
+                              <div class="col-md-6">
+                                                </div>					
+                           </div>
+                        </div>
+                     </div><!-- .site-info -->
+                  </footer><!-- #colophon -->
+               
+                  
+                  
+               </div><!-- #page -->
+               
+      </div>
+
+
+      <div id="pagina3" class="page">
          <h2>Introduzione al JavaScript</h2>
          <div class="row">
             <a href="#pagina1">Trona alla "Home"</a>
          </div>
          <div class="row">
+            <div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">­­­Introduzione a Javascript</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading">Storia di Javascript</h2>
+
+
+
+               <p>Javascript &egrave; un linguaggio che nasce alla fine degli anni &rsquo;90, come semplice estensione del browser per introdurre animazioni nelle pagine web. A seguito della sua standardizzazione &egrave; diventato il linguaggio standard per gestire le animazioni e l&rsquo;interazione con l&rsquo;utente nelle pagine web. Nel corso dei primi anni 2000, col vero e proprio boom di Internet, Javascript  &egrave; diventato il principale linguaggio per la realizzazione di applicazioni per il web nel browers, con nuove funzionalit&agrave; ed in particolare la capacit&agrave; di eseguire richieste <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;HTTP&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>HTTP</span> al server senza ricaricare la pagina (la cosiddetta <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> &ldquo;<span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;AJAX&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Tecnologia usata dal linguaggio Javascript per realizzare richieste HTTP all&amp;#039;interno di una applicazione in un browser senza ricaricare la pagina. Il suo funzionamento &egrave; asincrono e viene usato per inviare e ricevere dati da/verso web services.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>AJAX</span>&rdquo;). Dopo il 2010, con l&rsquo;avvento delle tecnologie mobili e di ulteriori funzionalit&agrave;, il linguaggio &egrave; diventato il principale riferimento per lo sviluppo di vere e proprie applicazioni web-based residenti sui dispositivi client (pc, tablet, smartphone, smartTV, ecc.). Dal 2015 in avanti, con la diffusione dell&rsquo;ambiente Node, Javascript &egrave; entrato anche nel mondo desktop, permettendo di realizzare applicazioni per pc, per server e applicazioni mobili. </p>
+               
+               
+               
+               <p>Oggi Javascript &egrave; il linguaggio di programmazione pi&ugrave; diffuso al mondo, in quanto &egrave; probabilmente l&rsquo;unico linguaggio di programmazione (insieme al C++) con cui &egrave; possibile scrivere applicazioni per pc, server, web, mobile, smartTV, intelligenza artificiale, IoT e videgiochi. La community di sviluppatori Javascript &egrave; la pi&ugrave; estesa al mondo (con ben 14 milioni di progetti sulla popolare piattaforma Github) e per Javascript sono stati realizzate migliaia di librerie e soprattutto framework di sviluppo, prima con JQuery e poi con React, Angular, Vue e Svelte, che oggi sono utilizzati nella praticamente totalit&agrave; dei siti web (nella parte eseguita lato client).</p>
+               
+               
+               
+               <p>Buona parte del successo odierno di Javascript lo si deve comunque non solo alla community ma ai grandi investimenti che vi hanno dedicato societ&agrave; come Google (autrice del motore di esecuzione pi&ugrave; diffuso e di Angular), Meta (con React), Apple (con la diffusione di iOs) e infine di Microsoft (che ha realizzato il linguaggio Typescript, una estensione fortemente tipizzata di Javascript). </p>
+               
+               
+               
+               <p>Le caratteristiche del linguaggio sono gestite da ECMA, una associazione internazionale che si occupa di standard industriali e di cui fanno parte tutte le aziende sopra citate. Lo standard di linguaggio di Javascript &egrave; chiamato ECMAScript (ES). Le due principali versioni che hanno reso Javascript un linguaggio in grado di realizzare vere e proprie applicazioni per il web sono ES5 (2009, programmazione ad oggetti e funzionale) ed ES6 (2015, classi, moduli, lambda functions). </p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>Caratteristiche principali</strong></h2>
+               
+               
+               
+               <p>Javascript &egrave; un linguaggio di programmazione&nbsp;<strong>interpretato</strong>. Un linguaggio interpretato &egrave; un linguaggio che non viene tradotto in codice macchina in fase di rilascio, ma viene eseguito da un programma specifico, detto&nbsp;<strong>runtime</strong>, che interpreta ed esegue le istruzioni in un contesto di esecuzione appositamente predisposto, che simula una macchina di Von Neumann, quindi con uno stack ed uno heap.</p>
+               
+               
+               
+               <p>Il runtime pi&ugrave; utilizzato di Javascript &egrave; Google V8<a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftn1"><sup>[1]</sup></a>, che garantisce oggi prestazioni simili a quelle di un linguaggio compilato. Questo perch&egrave; il linguaggio alla prima esecuzione viene compilato con una tecnica di compilazione JIT<a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftn2"><sup>[2]</sup></a>. </p>
+               
+               
+               
+               <p>Javascript pu&ograve; girare su&nbsp;<strong>browser</strong>, su&nbsp;<strong>deskop</strong>&nbsp;(ad esempio il popolare editor Visual Studio Code), su app&nbsp;<strong>mobile</strong>&nbsp;(come libreria interna WebView sia su Android che iOs), su tutte le principali SmartTV (Android, Tizen, WebOS, TvOS, ecc.).</p>
+               
+               
+               
+               <p>Javascript &egrave; un linguaggio che supporta tutti e 3 i principali paradigmi di programmazione:&nbsp;<strong>strutturato</strong>, ad&nbsp;<strong>oggetti</strong>&nbsp;e&nbsp;<strong>funzionale</strong>. </p>
+               
+               
+               
+               <p>Il paradigma&nbsp;<strong>strutturato</strong>&nbsp;consiste in quel modello di programmazione dove si usano costrutti di programmazione condizionali ed iterazioni sui dati, anche tramite una strutturazione basata su sottoprogrammi/funzioni, mantenendo separati i dati dal codice, analogamente a quanto avviene nel linguaggio C.</p>
+               
+               
+               
+               <p>Nel paradigma ad&nbsp;<strong>oggetti</strong>, i dati e le funzioni sono inglobati in contenitori chiamati oggetti, in cui i dati sono collegati alle funzioni che li manipolano. In Javascript &egrave; possibile manipolare oggetti sia tramite l&rsquo;utilizzo di classi (analogamente a Java/C#/C++) sia creandoli direttamente. L&rsquo;argomento sar&agrave; poi approfondito specificatamente.</p>
+               
+               
+               
+               <p>Nel paradigma&nbsp;<strong>funzionale</strong>, le funzioni sono a tutti gli effetti oggetti quindi possono essere memorizzate in variabili, ed inoltre possono restituire altre funzioni. Anche questo argomento sar&agrave; approfondito in modo specifico.</p>
+               
+               
+               
+               <p>Javascript ha un modello di programmazione&nbsp;<strong>monothread</strong>&nbsp;e per garantire reattivit&agrave; nell&rsquo;interfaccia utente si basa su un modello di esecuzione&nbsp;<strong>asincrono</strong>&nbsp;e basato su&nbsp;<strong>eventi</strong>. </p>
+               
+               
+               
+               <p>Per asincrono si intende che il runtime esegue una istruzione alla volta e per le attivit&agrave; bloccanti (ad esempio una richiesta di una risorsa su internet) esegue delle chiamate di libreria che svolgono queste attivit&agrave; in background (fuori dal runtime di Javascript). Inoltre Javascript &egrave; basato su una programmazione basata su eventi: &egrave; possibile quindi registrare delle funzioni, dette &ldquo;callback&rdquo;, che si attivano se avvengono degli eventi (ad esempio il click di un utente su un pulsante nel browser).</p>
+               
+               
+               
+               <p>La sintassi di base di JS &egrave; ereditata, come altri linguaggi, dal C e dal Java (da cui il nome Javascript). Per una trattazione specifica sui costrutti del C si rimanda alla <a href="https://cipiaceinfo.it/docs/programmazione/c/costrutti-del-linguaggio/" data-type="epkb_post_type_1" data-id="111">sezione</a> specifica.</p>
+               
+               
+               
+               <p>In questa dispensa vedremo il funzionamento base del linguaggio, la gestione delle variabili e i principali costrutti. </p>
+               
+               
+               
+               <h3 class="wp-block-heading">Console</h3>
+               
+               
+               
+               <p>Siccome Javascript non funziona (a differenza del C) con un input/output su schermo, a supporto del programmatore &egrave; previsto l&rsquo;oggetto&nbsp;<strong>console</strong>&nbsp;: &egrave; un oggetto che permette di mostrare informazioni in una apposita schermata di console presente nel browser: &egrave; possibile accedere alla schermata di console cliccando col tasto destro sulla pagina html e accedendo al menu per l&rsquo;accesso agli strumenti di sviluppo.&nbsp;</p>
+               
+               
+               
+               <p>Il metodo (principale) usato &egrave;&nbsp;<strong>console.log<a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftn3"><sup><strong>[3]</strong></sup></a></strong>&nbsp;ed ha per argomento qualsiasi espressione. Se l&rsquo;espressione &egrave; &ldquo;stampabile&rdquo; viene mostrato il risultato, altrimenti (ad esempio per oggetti complessi) viene mostrato un segnaposto al posto del risultato.</p>
+               
+               
+               
+               <p>Veniamo ora al linguaggio.</p>
+               
+               
+               
+               <h3 class="wp-block-heading">Variabili e costanti</h3>
+               
+               
+               
+               <p>Javascript &egrave; un linguaggio fortemente&nbsp;<strong>tipizzato</strong>. Questo significa che ogni variabile ha un tipo associato che ne identifica la valorizzazione e le operazioni possibili.&nbsp;</p>
+               
+               
+               
+               <p>Il tipo di dato &egrave; dedotto (&ldquo;inferito&rdquo;)&nbsp;<strong>dinamicamente</strong>&nbsp;ogni volta che si assegna una variabile, quindi la tipizzazione in JS &egrave; definita a runtime. Il &ldquo;nome&rdquo; di una variabile &egrave; un &ldquo;<strong>alias</strong>&rdquo; cio&egrave; un riferimento al dato presente in memoria. Questo alias pu&ograve; essere associato quindi a qualsiasi oggetto o altro contenuto. Non va comunque fatta confusione coi puntatori, come vedremo.&nbsp;Per la cancellazione delle aree di memoria non pi&ugrave; associate a delle variabili &egrave; previsto dal runtime uno speciale strumento, chiamato garbage collector, che libera la memoria dereferenziata.</p>
+               
+               
+               
+               <p>I tipi base sono tre:&nbsp;<strong>string</strong>,&nbsp;<strong>number</strong>,&nbsp;<strong>bool</strong>. Sono poi previsti <strong>tipi oggetto</strong>, come <strong>array</strong>, <strong>dizionari</strong>, <strong>oggetti</strong>, <strong>funzioni</strong>, <strong>classi</strong>. Le variabili vanno dichiarate con&nbsp;<strong>let</strong>, le costanti con&nbsp;<strong>const</strong>. Un simbolo assegnato come costante non pu&ograve; cambiare valore.<a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftn4"><sup>[4]</sup></a></p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let x = 3;
+               
+               const myString = &ldquo;Ciao&rdquo;;</code></pre></div>
+               
+               
+               
+               <p>Come anticipato sopra&nbsp;&egrave; possibile&nbsp;<strong>cambiare</strong>&nbsp;il tipo di una variabile:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let a=3; // adesso &egrave; un number
+               
+               a=&rdquo;ciao&rdquo;; // ora &egrave; una stringa</code></pre></div>
+               
+               
+               
+               <p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
+               
+               
+               
+               <p>Le variabili/costanti si inizializzano senza indicare il tipo, che viene inferito dall&rsquo;interprete.&nbsp;</p>
+               
+               
+               
+               <p>Sono poi previste espressioni speciali:</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>undefined</strong>: riferito ad una variabile indica che non &egrave; stata dichiarata, o &egrave; stata dichiarata ma mai assegnata;</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>null</strong>: riferito ad una variabile a cui &egrave; stato assegnato il valore nullo, un codice speciale che indica che la variabile &egrave; comunque valorizzata.</p>
+               
+               
+               
+               <p>Undefined e null non sono la stessa cosa, in quanto null &egrave; un valore assegnabile, mentre undefined &egrave; uno stato generico che indica una mancata assegnazione. Undefined sono tutte le variabili che non sono mai state assegnate, null invece indica che una assegnazione c&rsquo;&egrave; stata.</p>
+               
+               
+               
+               <p><strong>Sintassi</strong></p>
+               
+               
+               
+               <p>La sintassi di Javascript prevede le seguenti regole:</p>
+               
+               
+               
+               <p>&ndash; ogni istruzione deve terminare con un ;&nbsp;</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let i = 0;</code></pre></div>
+               
+               
+               
+               <p>&ndash; si possono usare i blocchi per raggruppare pi&ugrave; istruzioni:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>{
+               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let i=0;
+               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let j = i+2;
+               
+               }</code></pre></div>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Espressioni</strong></h3>
+               
+               
+               
+               <p>Una espressione &egrave; una struttura composta da elementi contenenti valori oppure operatori. Essa pu&ograve; essere oggetto di assegnazione (se a destra dell&rsquo;uguale), pu&ograve; essere parametro di funzione oppure essere valutata all&rsquo;interno di una condizione. L&rsquo;espressione viene sempre valutata prima del suo utilizzo.</p>
+               
+               
+               
+               <p>Espressioni principali di Javascript:</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>literal</strong>: valori numerici o stringhe assoluti scritti dal programmatore. es 1, False, &ldquo;Ciao&rdquo;.</p>
+               
+               
+               
+               <p>&ndash; espressioni&nbsp;<strong>aritmetiche</strong>. Es. &ldquo;5+4&rdquo;, &ldquo;90/2&rdquo;. Possono essere applicati operatori matematici (+,-,/,*,%, ecc.).</p>
+               
+               
+               
+               <p>&ndash; espressioni&nbsp;<strong>stringa</strong>: Es. &ldquo;ciao&rdquo; + &rdquo; Mario&rdquo;. Possono essere applicati operatori come + (concatenazione).</p>
+               
+               
+               
+               <p>&ndash; espressioni&nbsp;<strong>booleane</strong>. Es. 5 &gt; 3. Possono essere solo True o False. Possono essere applicati operatori booleani (&lt;, &lt;=, &gt;, &gt;=, !=, ==, !== e !==).&nbsp;</p>
+               
+               
+               
+               <p>&ndash; operatori&nbsp;<strong>unari</strong>. Es. typeof 5 (-&gt; number), c++ (incrementa di 1 il valore di c)</p>
+               
+               
+               
+               <p>&ndash;&nbsp;<strong>null</strong>&nbsp;e&nbsp;<strong>undefined</strong>.</p>
+               
+               
+               
+               <p>&ndash;&nbsp;variabili e costanti.</p>
+               
+               
+               
+               <p>&ndash; NaN (vedi sotto)</p>
+               
+               
+               
+               <p>In Javascript la conversione di tipo &egrave;&nbsp;<strong>automatica</strong>&nbsp;ogni volta ci&ograve; sia possibile.&nbsp;</p>
+               
+               
+               
+               <p>Ad esempio l&rsquo;espressione&nbsp;5+&rdquo;&rdquo;&nbsp;produce una stringa&nbsp;&ldquo;5&rdquo;.&nbsp;Tuttavia non sempre &egrave; possibile farlo, ad  in tal caso Javascript stampa l&rsquo;espressione &ldquo;NaN&rdquo; (Not a Number). Es: 5*&rdquo;&rdquo; restituisce NaN.</p>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Operatori booleani&nbsp;</strong></h3>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td>==<br>!=<br>&gt;=<br>&lt;=</td><td><strong>Uguaglianza debole.&nbsp;</strong><strong></strong>Questo operatore permette di confrontare oggetti di tipo diverso. Il sistema implicitamente effettua la conversione. Es:1 == &ldquo;1&rdquo; -&gt; Trueundefined == null -&gt; True</td></tr><tr><td>===<br>!==<br>&gt;==&lt;==</td><td><strong>Uguaglianza forte.</strong><strong></strong>Questo operatore permette di confrontare oggetti dove viene prima confrontato il tipo e poi il valore.1 === &ldquo;1&rdquo; -&gt; Falseundefined === null -&gt; False</td></tr><tr><td>truthy</td><td>Si indica come&nbsp;<strong>truthy</strong>&nbsp;qualsiasi espressione diversa da 0, &ldquo;&rdquo;, false, null, undefined. Le espressioni truthy se valutate in un if, while, ecc sono considerate&nbsp;<strong>true</strong>.</td></tr><tr><td>falsy</td><td>Si indica come&nbsp;<strong>falsy</strong>&nbsp;qualsiasi espressione uguale da 0, &ldquo;&rdquo;, false, null, undefined. Le espressioni falsy se valutate in un if, while, ecc sono considerate&nbsp;<strong>false</strong>.</td></tr></tbody></table></figure>
+               
+               
+               
+               <p>Nella prassi bisogna sempre usare l&rsquo;operatore di uguaglianza&nbsp;<strong>forte</strong>, l&rsquo;uso dell&rsquo;uguaglianza debole sebbene sia possibile, &egrave; considerato deprecato.<strong></strong></p>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Matematica e conversioni</strong></h3>
+               
+               
+               
+               <p>E&rsquo; possibile convertire da stringa a numero con i seguenti operatori.</p>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td>parseInt(&ldquo;12&rdquo;)<code> </code>// 12<br>parseInt(&ldquo;12abc&rdquo;)<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code>// 12<br>parseInt(&ldquo;a12bc&rdquo;)<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code>// NaN<br>parseInt(&ldquo;12.5&rdquo;)<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code>// 12<br>parseInt(&ldquo;12&rdquo;,<code> </code>8)</td></tr><tr><td>parseFloat(&ldquo;12&rdquo;)<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code>//12<br>parseFloat(&ldquo;12.5&rdquo;)</td></tr></tbody></table></figure>
+               
+               
+               
+               <p>L&rsquo;oggetto Math mette a disposizione un po&rsquo; di funzioni matematiche utili.&nbsp;</p>
+               
+               
+               
+               <p>Math.random(), Math.floor(), Math.ceil(), Math.round(), Math.abs(), Math.sin(), Math.cos(), Math.PI, Math.E, Math.sqrt(), Math.pow(), Math.min(), Math.max()</p>
+               
+               
+               
+               <h3 class="wp-block-heading">Stringhe</h3>
+               
+               
+               
+               <p>Andiamo a vedere un elenco di azioni che si possono svolgere con le stringhe.</p>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td><strong>Funzionalit&agrave;</strong><strong></strong></td><td><strong>Cosa fa</strong><strong></strong></td></tr><tr><td><strong>nomeStringa.split(delimitatore)</strong></td><td>Il metodo split permette di suddividere una stringa in un array di stringhe, divise da un separatore.&nbsp;&nbsp;</td></tr><tr><td><strong>array.join(delimitatore)</strong></td><td>Unisce gli elementi di un array in una stringa.</td></tr><tr><td><strong>nomeStringa.replace(a,b)</strong></td><td>Sostituisce la prima occorrenza di a con b. Il risultato &egrave; la nuova stringa.</td></tr><tr><td><strong>nomestringa.substring(a,b)</strong></td><td>Estrae la sottostringa con indice da a (compreso) a b (escluso).</td></tr><tr><td><strong>nomestringa.charAt(x);</strong></td><td>estrae il carattere alla posizione x</td></tr><tr><td><strong>nomestringa.charCodeAt(x);</strong></td><td>estrae il codice carattere alla posizione x</td></tr></tbody></table></figure>
+               
+               
+               
+               <p>Esempi:</p>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td><strong>Funzionalit&agrave;</strong><strong></strong></td><td><strong>Esempio</strong><strong></strong></td></tr><tr><td><strong>nomeStringa.split(delimitatore)</strong></td><td>let string = &ldquo;1,2,3,4,5&rdquo;;let numbers = string.split(&ldquo;,&rdquo;);</td></tr><tr><td><strong>array.join(delimitatore)</strong></td><td>let list = [1,2,3,4,5];const result = list.join(&ldquo;-&ldquo;);</td></tr><tr><td><strong>nomeStringa.replace(a,b)</strong></td><td>const string = &ldquo;Ciao Mario&rdquo;;string = string.replace(&ldquo;Ciao&rdquo;, &ldquo;Hello&rdquo;);</td></tr><tr><td><strong>nomestringa.substring(a,b)</strong></td><td>const string = &ldquo;Ciao Mario&rdquo;;sub = string.substring(0,4);</td></tr><tr><td><strong>nomestringa.charAt(x);</strong></td><td>const c = string.charAt(3);</td></tr><tr><td><strong>nomestringa.charCodeAt(x);</strong></td><td>const code = string.charCodeAt(3);</td></tr></tbody></table></figure>
+               
+               
+               
+               <p>Le stringhe in Javascript si possono fare anche multilinea.</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-plain"><code>const string = `Ciao sono 
+               una stringa
+               multilinea
+               `;</code></pre></div>
+               
+               
+               
+               <p>ed &egrave; possibile inserire dei valori:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-plain"><code>const nome = &quot;Mario&quot;;
+               const cognome = &quot;Rossi&quot;;
+               const string = `Ciao sono ${_nome} ${_cognome}`;</code></pre></div>
+               
+               
+               
+               <h3 class="wp-block-heading">Data-ora</h3>
+               
+               
+               
+               <p>Qui di seguito le operazioni fondamentali sulle stringhe.</p>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td><strong>Funzionalit&agrave;</strong><strong></strong></td><td><strong>Cosa fa</strong><strong></strong></td></tr><tr><td><strong>new Date();</strong></td><td>Restituisce un oggetto che contiene la data ora corrente.&nbsp;&nbsp;</td></tr><tr><td><strong>new Date(string);</strong></td><td>Restituisce un oggetto che contiene la data indicata dalla stringa (opportunamente formattata);</td></tr><tr><td><strong>new Date(y,M,d,h,m,s,ms);</strong></td><td>Restituisce un oggetto dato anno, mese, giorno, ora, minuti secondi, millsecondi</td></tr><tr><td><strong>getDate(), getMonth(), getFullYear(), getHours(), getMinutes(), getSeconds()</strong></td><td>Restituisce gli elementi di una data.</td></tr><tr><td><strong>Date.now()</strong></td><td>Restituisce il timestamp corrente (in millisecondi).</td></tr><tr><td><strong>getTime();</strong></td><td>Restituisce il timestamp della data d (che deve essere un oggetto Date)</td></tr></tbody></table></figure>
+               
+               
+               
+               <h3 class="wp-block-heading"><strong>Costrutti programmazione strutturata</strong></h3>
+               
+               
+               
+               <p><em>Nota: le parentesi quadre indicano codice opzionale<strong>.</strong></em></p>
+               
+               
+               
+               <figure class="wp-block-table"><table><tbody><tr><td><strong>Costrutto</strong></td><td><strong>Spiegazione ed esempio:</strong></td></tr><tr><td><strong>if</strong>&nbsp;(<em>condizione</em>)&nbsp;&nbsp;&nbsp;istruzione&nbsp;[<strong>else</strong>&nbsp;&nbsp;&nbsp;istruzione]</td><td>if (x==3) {&nbsp;&nbsp;console.log(&ldquo;x &egrave; uguale a 3&rdquo;);} else {&nbsp;console.log(&ldquo;x non &egrave; uguale a 3&rdquo;);};</td></tr><tr><td><strong>for</strong>&nbsp;(<em>inizializzazione</em>;&nbsp;<em>condizione</em>;&nbsp;<em>iterazione</em>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;istruzione</td><td>for (int i=0; i&lt;10; i++) {&nbsp;&nbsp;console.log(&ldquo;x: &rdquo; + x);}</td></tr><tr><td><strong>while</strong>&nbsp;(<em>condizione</em>)&nbsp;&nbsp;&nbsp;istruzione</td><td>i=0;while (i&lt;10) {&nbsp;&nbsp;console.log(&ldquo;x: &rdquo; + x);};</td></tr><tr><td><strong>do&nbsp;</strong><strong></strong>&nbsp;&nbsp;istruzione&nbsp;<strong>while</strong>&nbsp;(<em>condizione</em>)</td><td>i=0;do {&nbsp;&nbsp;console.log(&ldquo;x: &rdquo; + x);} while (i&lt;10);</td></tr><tr><td><strong>switch</strong>&nbsp;(<em>espressione</em>): {&nbsp;&nbsp;case valore: istruzione; break;&nbsp;&nbsp;[case valore: istruzione; break; &hellip;]&nbsp;&nbsp;[case default: istruzione]}</td><td>switch (x): {&nbsp;case 1: {console.log(&ldquo;1&rdquo;); break; }&nbsp;case 3: {console.log(&ldquo;3&rdquo;); break; }&nbsp;case default: {console.log(&ldquo;default&rdquo;);}</td></tr><tr><td>valore =&nbsp;<em>condizione</em>&nbsp;<strong>?</strong>&nbsp;expr1&nbsp;<strong>:</strong>&nbsp;expr2;</td><td>Il codice equivale a:&nbsp;if (expr1) {&nbsp;&nbsp;&nbsp;&nbsp;valore = expr1;} else {&nbsp;&nbsp;&nbsp;&nbsp;valore = expr2;}&nbsp;int a = b &gt; c ? b : c</td></tr><tr><td>valore = expr1 || expr2;</td><td>if (expr1) {&nbsp;&nbsp;&nbsp;valore = expr1;} else {&nbsp;&nbsp;&nbsp;valore = expr2;}&nbsp;int a = b || c;</td></tr></tbody></table></figure>
+               
+               
+               
+               <h3 class="wp-block-heading"></h3>
+               
+               
+               
+               <h2 class="wp-block-heading">Funzioni</h2>
+               
+               
+               
+               <p>Le funzioni possono essere definite in due modi, ciascuno con due varianti:</p>
+               
+               
+               
+               <p>Funzione standard &ndash; variante classica:</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>function somma(x, y) {
+               &nbsp;&nbsp;return x+y;
+               }&nbsp;</code></pre></div>
+               
+               
+               
+               <p>Funzione standard &ndash; variante anonima</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let f = function(x, y) {
+                 return x+y;
+               }</code></pre></div>
+               
+               
+               
+               <p>Funzione freccia (detta anche lambda)</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const f = (x,y) =&gt; {
+                 return x+y;
+               }</code></pre></div>
+               
+               
+               
+               <p>Funzione freccia compatta, notare che vengono eliminate parentesi e istruzione return, questa notazione si pu&ograve; usare per funzioni di una riga di codice che ritornano un valore.</p>
+               
+               
+               
+               <div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const f = x,y =&gt; x+y</code></pre></div>
+               
+               
+               
+               <p>Le tipologie di funzione sono praticamente identiche<a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftn5"><sup>[5]</sup></a>. Le funzioni sono oggetti in memoria e vanno trattati come tali: &egrave; possibile come visto salvare una funzione in una variabile, in array e dizionari, si possono restituire nelle funzioni, ed altro ancora. Le funzioni sono molto articolate e sono una caratteristica fondamentale di Javascript. Sar&agrave; previsto un approfondimento specifico.</p>
+               
+               
+               
+               <h2 class="wp-block-heading"><strong>Oggetti</strong></h2>
+               
+               
+               
+               <p>In Javascript tutte le variabili (e costanti) sono oggetti (eccetto number e bool).</p>
+               
+               
+               
+               <p>Quindi array, dizionari e funzioni sono oggetti, cos&igrave; come qualsiasi oggetto del browser (se JS &egrave; eseguito nel browser), importato, generato da funzione o classe.&nbsp;</p>
+               
+               
+               
+               <p>In Javascript inoltre gli oggetti sono sempre&nbsp;<strong>dinamici</strong>. E&rsquo; quindi sempre possibile aggiungere propriet&agrave; e metodi a oggetti esistenti, qualunque sia la loro forma originaria. Anche array, dizionari e funzioni sono oggetti e quindi godono delle stesse identiche caratteristiche, anche la dinamicit&agrave;.</p>
+               
+               
+               
+               <hr class="wp-block-separator has-alpha-channel-opacity">
+               
+               
+               
+               <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref1"><sup>[1]</sup></a>&nbsp;V8 &egrave; scritto in C++ e pu&ograve; essere integrato come libreria in applicazioni C++.</p>
+               
+               
+               
+               <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref2"><sup>[2]</sup></a>&nbsp;la compilazione JIT (&ldquo;Just in time&rdquo;) consiste in una precompilazione del codice subito prima dell&rsquo;esecuzione. La prima esecuzione &egrave; leggermente pi&ugrave; lenta le successive sono velocissime.</p>
+               
+               
+               
+               <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref3"><sup>[3]</sup></a>&nbsp;ma sono previsti metodi per ogni tipo di informazione: debug, error, info, warning.</p>
+               
+               
+               
+               <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref4"><sup>[4]</sup></a>&nbsp;Nelle versioni fino al 2015 di Javascript la dichiarazione di una variabile era indicata con var. Per questo, erroneamente ancora oggi, in molti siti e libri si usano ancora esempi con var, oggi deprecati.</p>
+               
+               
+               
+               <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref5"><sup>[5]</sup></a>&nbsp;le funzioni freccia hanno, in alcuni rari casi, delle limitazioni ma vanno oltre la trattazione del presente corso.</p>
+               </div>
+
+               <div class="sydney-credits">&copy; 2024 Ci piace info. </div>
+               </div><!-- #page -->
+               
             
-         </div>
+         
       </div>
 
-      <div id="pagina3" class="page">
+      <div id="pagina4" class="page">
          <h2>NodeJS</h2>
          <div class="row">
             <a href="#pagina1">Trona alla "Home"</a>
@@ -46,16 +981,7 @@
          </div>
       </div>
 
-      <div id="pagina4" class="page">
-         <h2>C/C++: introduzione completa</h2>
-         <div class="row">
-            <a href="#pagina1">Trona alla "Home"</a>
-         </div>
-         <div class="row">
-            
-         </div>
 
-      </div>
    </div>
 </body>
 
