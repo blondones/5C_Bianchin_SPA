@@ -6,6 +6,14 @@ body {
    text-align: center;
 }
 
+.visible {
+   display: block;
+}
+
+.hidden {
+   display: none;
+}
+
 .page {
    display: none;
 }

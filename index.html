@@ -28,10 +28,8 @@
       </div>
 
       <div id="pagina2" class="page">
-         <h2>C/C++: introduzione completa</h2>
-         <div class="row">
-            <a href="#pagina1">Trona alla "Home"</a>
-         </div>
+   
+        
          <div class="row">
             <div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">C/C++: introduzione completa</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading"><strong>Linguaggi C e C++</strong></h2>
 
@@ -540,17 +538,16 @@
                   </footer><!-- #colophon -->
                
                   
-                  
+                  <div class="row">
+                     <a href="#pagina1">Trona alla "Home"</a>
+                  </div>
                </div><!-- #page -->
-               
       </div>
 
 
       <div id="pagina3" class="page">
-         <h2>Introduzione al JavaScript</h2>
-         <div class="row">
-            <a href="#pagina1">Trona alla "Home"</a>
-         </div>
+
+         
          <div class="row">
             <div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">­­­Introduzione a Javascript</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading">Storia di Javascript</h2>
 
@@ -964,23 +961,523 @@
                <p><a href="applewebdata://870F1381-53EB-4BE6-B0A7-73C28826F7BC#_ftnref5"><sup>[5]</sup></a>&nbsp;le funzioni freccia hanno, in alcuni rari casi, delle limitazioni ma vanno oltre la trattazione del presente corso.</p>
                </div>
 
-               <div class="sydney-credits">&copy; 2024 Ci piace info. </div>
-               </div><!-- #page -->
-               
-            
-         
+                  
+<footer id="colophon" class="site-footer">
+   <div class="container">
+      <div class="site-info">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="sydney-credits">&copy; 2024 Ci piace info. </div>					</div>
+            <div class="col-md-6">
+                              </div>					
+         </div>
+      </div>
+   </div><!-- .site-info -->
+</footer><!-- #colophon -->
+               <div class="row">
+                  <a href="#pagina1">Trona alla "Home"</a>
+               </div>
+   
       </div>
 
       <div id="pagina4" class="page">
-         <h2>NodeJS</h2>
+         
          <div class="row">
-            <a href="#pagina1">Trona alla "Home"</a>
-         </div>
+    <div id="eckb-article-content-header-row-2"><div class="eckb-article-content-header-row-left-group"><div id="eckb-article-content-title-container"><h1 class="eckb-article-title">Introduzione a NodeJs</h1></div></div></div></div><div id="eckb-article-content-body"><h2 class="wp-block-heading"><strong>Cosa &egrave; NodeJs</strong></h2>
+
+
+
+<p>NodeJs &egrave; un&nbsp;<strong>runtime</strong>&nbsp;che consente di eseguire applicazioni scritte in Javascript su qualsiasi macchina, estendendo quindi la possibilit&agrave; di scrivere applicazioni in questo linguaggio al di fuori del browser.</p>
+
+
+
+<p>Il motore di esecuzione di NodeJS &egrave; Google V8, lo stesso utilizzato per il browser Chrome. </p>
+
+
+
+<p>NodeJs &egrave; utilizzato nello specifico per realizzare siti web, web services, applicazioni desktop, applicazioni di IoT e di Intelligenza Artificiale, ed infine come strumento a supporto dello sviluppo di altri linguaggi, in particolare nella realizzazione di applicazioni mobile (grazie a framework come Cordova e Ionic). </p>
+
+
+
+<p>Grazie al fatto che Javascript &egrave; il linguaggio di programmazione pi&ugrave; utilizzato al mondo NodeJs ha avuto una enorme diffusione.</p>
+
+
+
+<p>NodeJs &egrave; una applicazione installabile nella maggior parte dei sistemi operativi, e si pu&ograve; scaricare da <a href="https://nodejs.org/en/">qui</a>.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Il mio primo progetto Node</strong></h2>
+
+
+
+<p>Le applicazioni NodeJS possono essere scritte su qualsiasi IDE, ma si consiglia l&rsquo;utilizzo di Visual Studio Code, visto che &egrave; studiato per scrivere codice Javascript, ed &egrave; stato scritto proprio con NodeJS. </p>
+
+
+
+<p>Quindi dopo essere entrati in VS Code, esserci posizionati su una nuova cartella, occorre aprire il terminale e scrivere</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-bash" data-lang="Bash"><code>npm init</code></pre></div>
+
+
+
+<p><strong>Cos&rsquo;&egrave; npm? </strong>NodeJs introduce il concetto di package manager, ovvero una applicazione che permette di gestire un progetto NodeJS (o anche Javascript per browser), L&rsquo;applicazione si chiama&nbsp;<strong>npm</strong>&nbsp;(Node Package Manager) e permette di svolgere le seguenti attivit&agrave;:</p>
+
+
+
+<ul class="wp-block-list">
+<li>gestire un file di configurazione che contiene i metadati del progetto, chiamato <code>package.json</code>;</li>
+
+
+
+<li>scaricare e tenere traccia nel file di configurazione di librerie presenti nel catalogo ufficiale (npmjs.com) che vedremo sotto.</li>
+
+
+
+<li>gestire comandi per eseguire il codice Node, fare test, o altre operazioni di DevOps.</li>
+</ul>
+
+
+
+<p>Un file <code>package.json </code>&egrave;o quindi il documento di configurazione principale di progetto di una applicazione NodeJs.</p>
+
+
+
+<p>Qui un esempio di package.json.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-json" data-lang="JSON"><code>{
+
+&nbsp;&nbsp;&quot;name&quot;: &quot;Hello World&quot;,
+&nbsp;&nbsp;&quot;version&quot;: &quot;1.0.0&quot;,
+&nbsp;&nbsp;&quot;description&quot;: &quot;simple Hello World application&quot;,
+&nbsp;&nbsp;&quot;main&quot;: &quot;index.js&quot;,
+&nbsp;&nbsp;&quot;author&quot;: &quot;cipiaceinfo.it&quot;,
+&nbsp;&nbsp;&quot;license&quot;: &quot;ISC&quot;,
+&nbsp;&nbsp;&quot;dependencies&quot;: {
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;}
+}</code></pre></div>
+
+
+
+<p>A questo punto creiamo il file index.js e scriviamo</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>console.log(&quot;Hello World&quot;).</code></pre></div>
+
+
+
+<p>Ed eseguiamo da linea di comando:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-bash" data-lang="Bash"><code>&gt;node index.js
+Hello World</code></pre></div>
+
+
+
+<p>Come si pu&ograve; vedere console.log (o info, error, ecc.) stampa su terminale.</p>
+
+
+
+<p>C&rsquo;&egrave; un altro modo in VS Code per eseguire il codice NodeJS: posizionandosi sul pulsante </p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="86" height="106" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/Schermata-2024-07-11-alle-08.57.08.png" alt="" class="wp-image-581" style="width:70px;height:auto"/></figure>
+
+
+
+<p>ed eseguendo il codice dello script correntemente selezionato. Maggiori dettagli sul sito di NodeJs.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Ambienti di sviluppo</strong></h2>
+
+
+
+<h3 class="wp-block-heading"><strong>In locale: Visual Studio Code</strong></h3>
+
+
+
+<p>Visual Studio Code &egrave; una applicazione IDE (ambiente integrato di sviluppo) compatibile con la maggior parte dei linguaggi di programmazione. E&rsquo; disponibile per Linux, MacOS e Windows. Visual Studio Code &egrave; preconfigurato per scrivere applicazioni Web Javascript. .</p>
+
+
+
+<p>Una volta installato e configurato l&rsquo;ambiente si ha a disposizione l&rsquo;ambiente IDE di sviluppo. </p>
+
+
+
+<h3 class="wp-block-heading"><strong>Online&nbsp;</strong></h3>
+
+
+
+<p>Online sono disponibili diversi ambienti di sviluppo, quasi tutti basati su una versione online di VS Code. L&rsquo;ambiente qui consigliato &egrave; Stackblitz.&nbsp;</p>
+
+
+
+<p>Stackblitz offre un ambiente NodeJS (e frontend) completo.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Librerie esterne</strong></h2>
+
+
+
+<p>In Node non sono presenti gli oggetti presenti nel browser, quindi niente DOM e BOM. Ci si affida quindi solo alle librerie esterne.</p>
+
+
+
+<p>NPM prende in prestito dal mondo Linux il concetto di avere un unico repository centralizzato dove scaricare tutte le librerie necessarie per il progetto, repository che si trova su <a href="https://www.npmjs.com">npmjs.com</a>, che contiene librerie di ogni tipo per estendere le funzionalit&agrave; delle applicazioni per NodeJS.</p>
+
+
+
+<p>Npm &egrave; utilizzabile anche nel browser per gli stessi scopi, ed anche in quel caso le dipendenze sono gestite tramite <code>package.json</code>.</p>
+
+
+
+<p>Resta da capire come gestire l&rsquo;importazione di librerie esterne in uno script Node. La prima soluzione individuata da Node fin dalla sua creazione nel 2012 &egrave; quella di usare uno standard di importazione che si chiama CommonJs. Lo vediamo in questo esempio:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>CommonJS</strong></h3>
+
+
+
+<p>Export:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const log = (data) =&gt; {
+console.log(data);
+}
+
+module.exports = log;</code></pre></div>
+
+
+
+<p>Import:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const log = require('log.js');
+
+log('ciao');
+</code></pre></div>
+
+
+
+<p>Con questo sistema &egrave; possibile creare pi&ugrave; files e importare le dipendenze.&nbsp;&nbsp;In generale CommonJs prevede che da ogni file venga esportato un solo oggetto (di qualunque tipo).&nbsp;&nbsp;Il sistema funziona allo stesso modo anche con le librerie di terze parti.</p>
+
+
+
+<p>Dal 2015, tuttavia con ES6 viene introdotto il nuovo standard ES Module, utilizzabile anche nel browser, che ha una sintassi diversa e permette di importare, a partire dallo stesso sorgente, pi&ugrave; di un oggetto. Bisogna quindi dichiarare cosa si esporta e cosa si importa:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>ES Modules</strong></h3>
+
+
+
+<p>Import</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const log = (data) =&gt; {
+console.log(data);
+}
+
+export log;
+</code></pre></div>
+
+
+
+<p>Export:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>import {log} from 'log.js';
+
+log('ciao');
+</code></pre></div>
+
+
+
+<p>Inoltre nel <code>package.json</code> bisogna aggiungere la voce:</p>
+
+
+
+<p><code>&quot;type&quot;: &quot;module&quot;&nbsp;</code></p>
+
+
+
+<p>ES Modules &egrave; sicuramente un sistema pi&ugrave; moderno. Tuttavia ad oggi (2024) nella maggior parte delle librerie si usa ancora CommonJS in NodeJs mentre ESM &egrave; l&rsquo;unico sistema usato nel browser (dove CommonJS non &egrave; disponibile).&nbsp;&nbsp;</p>
+
+
+
+<p>E&rsquo; anche possibile usare entrambi abilitando prima ESM come visto sopra e poi eseguendo le seguenti istruzioni ad inizio script per abilitare anche CommonJS:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>import { createRequire } from &quot;module&quot;;
+const require = createRequire(import.meta.url);</code></pre></div>
+
+
+
+<h2 class="wp-block-heading"><strong>Esempi e prime applicazioni di base</strong></h2>
+
+
+
+<h3 class="wp-block-heading"><strong>Input terminale</strong></h3>
+
+
+
+<p>NodeJs &egrave; prima di tutto una applicazione da terminale e quindi &egrave; possibile interagire con l&rsquo;utente.</p>
+
+
+
+<p>Qui un esempio di lettura input utente usando la libreria&nbsp;<strong>Readline</strong>. </p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const readline = require('readline');
+readline.createInterface({
+&nbsp;&nbsp;input: process.stdin,
+&nbsp;&nbsp;output: process.stdout
+});
+
+readline.question('Who are you?', name =&gt; {
+&nbsp;&nbsp;console.log(`Hey there ${name}!`);
+&nbsp;&nbsp;readline.close();
+});</code></pre></div>
+
+
+
+<p>L&rsquo;oggetto process da un insieme di informazioni relative al processo in esecuzione:</p>
+
+
+
+<ul class="wp-block-list">
+<li>stdin e stdout: gli stream di input ed output (come in C++);</li>
+
+
+
+<li>argv: gli argomenti;</li>
+
+
+
+<li>env: visualizzare le variabili di ambiente</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Client web</strong></h3>
+
+
+
+<p>Una chiamata ad un server remoto pu&ograve; essere fatta usando la libreria &ldquo;node-fetch&rdquo;, che ha un comportamento identico a fetch su browser.</p>
+
+
+
+<p>E&rsquo; possibile installare node-fetch con&nbsp;<strong>npm</strong>. Qui un esempio di codice:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>import fetch from 'node-fetch';
+
+fetch('https://dummy.restapiexample.com/api/v1/employees')
+.then(response =&gt; response.json())
+.then(data =&gt; console.log(data));</code></pre></div>
+
+
+
+<h3 class="wp-block-heading"><strong>Lettura e scrittura file.</strong></h3>
+
+
+
+<p>Qui un semplice esempio di lettura file con la libreria&nbsp;<strong>fs</strong>.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const fs = require('fs');&nbsp;
+fs.readFile(&quot;miofile.txt&quot;, (error, data) =&gt; {
+&nbsp;&nbsp;if (error) {
+&nbsp;&nbsp;&nbsp;&nbsp;throw error;
+&nbsp;&nbsp;}
+&nbsp;&nbsp;console.log(data.toString());
+});</code></pre></div>
+
+
+
+<p>Qui invece un esempio di scrittura:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const fs= require('fs');&nbsp;
+fs.writeFile(&quot;miofile.txt&quot;, &quot;my text&quot;, (error) =&gt; {
+&nbsp;&nbsp;if (error) {
+&nbsp;&nbsp;&nbsp;&nbsp;throw error;
+&nbsp;&nbsp;}
+&nbsp;&nbsp;console.log(&quot;Data written&quot;);&nbsp;
+});</code></pre></div>
+
+
+
+<h3 class="wp-block-heading"><strong>Files e directory</strong></h3>
+
+
+
+<p>Qui un elenco di funzioni sui files:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Comando</strong></td><td><strong>Azione</strong></td><td><strong>opzioni</strong></td></tr><tr><td><strong>readdir</strong></td><td>legge il contenuto di un folder</td><td>name callback</td></tr><tr><td><strong>mkdir</strong></td><td>crea folder</td><td>name, callback</td></tr><tr><td><strong>rmdir</strong></td><td>cancella folder</td><td>name, callback</td></tr><tr><td><strong>unlink</strong></td><td>cancella un file</td><td>name, callback</td></tr><tr><td><strong>copyFile</strong></td><td>copia un file</td><td>origin, dest, callback</td></tr></tbody></table></figure>
+
+
+
+<p>Ad esempio per leggere un folder:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>const fs = require(&quot;fs&quot;);
+
+fs.readdir(&quot;dir&quot;, (error, files) =&gt; {&nbsp;
+
+&nbsp;&nbsp;if (error) {&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;throw error;
+
+&nbsp;&nbsp;}&nbsp;
+
+&nbsp;&nbsp;console.dir(files);
+
+});</code></pre></div>
+
+
+
+<h3 class="wp-block-heading"><strong>Server web</strong></h3>
+
+
+
+<p>Concludiamo questa lezione mostrando come con NodeJs &egrave; molto semplice creare un semplice web server. Approfondiremo la parte web in apposita lezione.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;HTTP&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>http</span> = require(&quot;<span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;HTTP&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>http</span>&quot;);
+
+<span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;HTTP&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Protocollo di livello applicazione che si basa su una architettura client-server dove il client invia richieste al server, ed il server restituisce risposte. E&amp;#039; la tecnologia principale del Web, usato dai browser, dalle applicazioni desktop e mobili, e costituisce una delle principali tecnologie di Internet.&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>http</span>.createServer(function&nbsp;(request,&nbsp;response)&nbsp;{
+
+&nbsp;&nbsp;&nbsp;response.writeHead(200,&nbsp;{'Content-Type':&nbsp;'text/plain'});
+
+&nbsp;&nbsp;&nbsp;response.end('Hello World!\n');
+
+}).listen(8081);
+
+&nbsp;
+
+console.log('Server running at port 8081');</code></pre></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading">Async await</h2>
+
+
+
+<p>La notazione async&hellip;await &egrave; un sistema per rendere pi&ugrave; leggibili le promise. Ad esempio questa &egrave; una fetch gestita con then-catch.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>fetch(url)
+.then(r =&gt; r.json())
+.then(data =&gt; console.log(data))
+.catch(e =&gt; console.error(e));</code></pre></div>
+
+
+
+<p>Per essere gestita tramite async-await bisogna includerla in una funzione async in questo modo: </p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-js" data-lang="JavaScript"><code>let load = async () =&gt; {
+try {
+ const r = await fetch(url);
+ const data = await r.json();
+ console.log(data);
+} catch (e) {
+ console.error(e);
+}
+}</code></pre></div>
+
+
+
+<p>Le due notazioni sono identiche. Il grosso vantaggio di async await &egrave; la leggibilit&agrave;: &ldquo;sembra&rdquo; che il codice asincrono diventi sincrono e quindi che lo script si fermi ad aspettare (await) che la fetch si concluda. In realt&agrave; &egrave; del tutto illusorio: in realt&agrave; c&rsquo;&egrave; sempre una promise e codice asincrono e quindi semplicemente il codice che stiamo vedendo &egrave; solo zucchero sintattico: prima di essere eseguito lo script qui sopra viene prima trasformato in quello precedente e poi eseguito.</p>
+
+
+
+<p>Va poi osservato che await &egrave; utilizzabile solo in funzioni marcate come async, quindi non direttamente nello script principale. Esiste per&ograve; una soluzione, che sono le funzioni anonime autoeseguenti:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-plain"><code>(async () =&gt; {
+try {
+ const r = await fetch(url);
+ const data = await r.json();
+ console.log(data);
+} catch (e) {
+ console.error(e);
+}
+})();</code></pre></div>
+
+
+
+<p>Questa funzione viene dichiarata e messa subito in coda di esecuzione ed eseguita appena possibile. Questo codice, cos&igrave; come gli async-await, funziona sia su NodeJS che su browser. </p>
+
+
+
+<p>Si ricorda tuttavia di usare questa notazione solo quando si ha raggiunto sufficiente dimestichezza con le promise.</p>
+
+
+
+<p></p>
+
+</div>
+
+
+   
+   
+<footer id="colophon" class="site-footer">
+   <div class="container">
+      <div class="site-info">
          <div class="row">
-            
+            <div class="col-md-6">
+               <div class="sydney-credits">&copy; 2024 Ci piace info. </div>					</div>
+            <div class="col-md-6">
+                              </div>					
          </div>
       </div>
+   </div><!-- .site-info -->
+</footer><!-- #colophon -->
 
+
+<div class="row">
+   <a href="#pagina1">Trona alla "Home"</a>
+</div>
+</div><!-- #page -->
+               
+      </div>
+
+
+         
+      </div>
 
    </div>
 </body>
